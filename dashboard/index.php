@@ -32,7 +32,7 @@ function primary($varWp1, $varWp2, $varWp3) {    //dit is de functie voor de pri
 	echo $weapon;                                //print het gerandomizede wapen op het scherm
 }
 function secondary($varWp1, $varWp2) {            //dit is een herhaling van de functie primary maar dan kleiner om dat er meestal maar 2 secondaries zijn
-	$rnd= rand(1,2);
+	$rnd = rand(1,2);
 	if ($rnd == "1") {
 		$weapon = $varWp1;
 	} else {
@@ -52,7 +52,7 @@ function gadget($varGG1, $varGG2) {                //deze is precies hetzelfde a
 	echo $gadget;
 }
 
-if (isset($_GET['ClickAttack'])) {	//deze if statement kijk of ClickAttack true is, zo ja dan voet hij de onderstaande functie uit
+if (isset($_GET['ClickAttack'])) {	//deze if statement kijk of ClickAttack true is, zo ja dan voert hij de onderstaande functie uit
 	attackers();
 }
 
